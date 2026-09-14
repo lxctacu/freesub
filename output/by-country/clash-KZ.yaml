@@ -5,6 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+  server: 104.18.47.113
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  server: 162.159.38.127
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  server: 104.17.148.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: 518de0d4-6ce8-4404-80db-23c4a8806128
+  tls: true
+  servername: ez-5faafb.esmaoi.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ez-5faafb.esmaoi.workers.dev
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
   server: 91.224.87.22
   port: 9882
   udp: true
@@ -19,13 +55,20 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  server: 94.198.220.183
-  port: 64674
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
+  server: 62.233.39.9
+  port: 8443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: s8LbJCgUiGXeCKVc63tHJP
+  type: vless
+  uuid: dca76b88-b038-e82b-45e1-1d76b476d7ca
+  tls: true
+  reality-opts:
+    public-key: oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk
+  servername: dl.dell.com
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +76,9 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +86,8 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
 rules:
 - MATCH,PROXIES

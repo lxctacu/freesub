@@ -10,20 +10,20 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: wwbqwqqnlyydssc.cfooov.xyz
-  port: 39817
+  server: e28fb658-343a-45b2-8be2-1ca1966b048d.d4d89e60-57f2-478b-bafd-936a2c3183af.smartprivatelink.com
+  port: 443
   udp: true
   type: vless
-  uuid: 6dbb8854-17a5-4684-b930-c11f022975ec
+  uuid: 66d0b230-3b09-421d-be15-ad2e27a90c00
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: uzaav8KrDeu1P9qdg6fDfxmq9Z6vV6a-WVPTWX1zIj4
-    short-id: 0044d4f490e795b8
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: -QgMOwO9HekIbLO5Ptcc0FtuwnDKdg-asGq_aNt-Pm0
+    short-id: 84dd2a2e
+  servername: www.douyin.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
