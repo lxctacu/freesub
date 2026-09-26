@@ -6,23 +6,14 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "172.67.208.1",
-      "server_port": 443,
-      "uuid": "1443b7a1-7ba9-4ec9-b904-2e867367b5d7",
-      "tls": {
-        "enabled": true,
-        "server_name": "odd-violet-5440.asdgrweeee13.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "172.64.154.8",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/?ed=2560security=tls",
         "headers": {
-          "Host": "odd-violet-5440.asdgrweeee13.workers.dev"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
@@ -37,7 +28,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

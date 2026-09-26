@@ -5,20 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 172.67.208.1
-  port: 443
+  server: 172.64.154.8
+  port: 8080
   udp: true
   type: vless
-  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
-  tls: true
-  servername: odd-violet-5440.asdgrweeee13.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /sync
+    path: /?ed=2560security=tls
     headers:
-      Host: odd-violet-5440.asdgrweeee13.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 194.61.31.126
   port: 2053
@@ -30,7 +26,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
