@@ -29,7 +29,7 @@ proxies:
     public-key: JJsjBS60tj6uZp-x2tMJ_ioblXRcru_apACEkMJYnBM
     short-id: b5a3
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   server: 143.42.46.37
   port: 25605

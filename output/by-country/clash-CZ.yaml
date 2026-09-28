@@ -5,27 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 188.114.97.3
+  server: 153.76.185.147
+  port: 3090
+  udp: true
+  type: vless
+  uuid: dca830a2-3c69-4e1b-bc0b-a2ea22af53ba
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: gerwai1488.vvzzkontaktezzvv.garden
   port: 443
   udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: 6M1RGyIeClMRx9hef1.z6-0HlnubjIbWZpa85.wOrKerS.DEv
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/ox5zBiRQjs2Rscy0XwxXY2ZzE?ed=2560
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
+    short-id: 0c13e8822e7f58aa
+  servername: gerwai1488.vvzzkontaktezzvv.garden
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 rules:
 - MATCH,PROXIES
