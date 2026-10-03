@@ -5,18 +5,14 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "v2ray.aizgl.com",
-      "server_port": 443,
-      "uuid": "4b21fbc7-00c2-4665-9788-02153832f9e5",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray.aizgl.com",
-        "insecure": false
-      },
+      "tag": "🇦🇱 AL 01 - xiaohe",
+      "server": "lv1.rovilo.ir",
+      "server_port": 2095,
+      "uuid": "452f869f-7720-47c3-a175-b6673e31d3e8",
       "transport": {
-        "type": "ws",
-        "path": "/xray-ws"
+        "type": "httpupgrade",
+        "path": "/",
+        "host": "connectivitycheck.android.com"
       }
     },
     {
@@ -24,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇦🇱 AL 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇦🇱 AL 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
