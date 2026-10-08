@@ -5,16 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "45.195.69.230",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "tag": "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe",
+      "server": "80.243.228.84",
+      "server_port": 2085,
+      "uuid": "84a7add6-dab3-4af4-900b-192e3e338875",
       "transport": {
-        "type": "ws",
-        "path": "/platform103",
-        "headers": {
-          "Host": "platform103.halalkhor.info"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
@@ -22,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
+        "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
